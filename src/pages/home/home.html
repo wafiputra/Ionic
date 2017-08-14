@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+  	<ion-buttons end>
+  		<button ion-button ion-only (click)="onLoadNewPlace()">
+  		<ion-icon name="add"></ion-icon>
+  		</button>
+  	</ion-buttons>
+    <ion-title>
+      Awesome Place
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ul>
+	<li *ngFor="let place of places">{{ place.title }}</li>
+</ul>
+</ion-content>
